@@ -180,6 +180,7 @@
     "is-unicode-supported": "^0.1.0",
     "is-weakref": "^1.0.2",
     "isexe": "^2.0.0",
+    "jest-environment-jsdom": "^29.4.0",
     "js-tokens": "^4.0.0",
     "js-yaml": "^3.14.1",
     "jsesc": "^2.5.2",

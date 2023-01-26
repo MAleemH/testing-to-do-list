@@ -1,5 +1,16 @@
-import TodoList from './modules/todoList.js';
+/**
+ * @jest-environment jsdom
+*/
+import TodoList from './__mocks__/todoList.js';
 
-test('add a todo', () => {
-  expect(TodoList.addTask('New Task', 'false')).toBe('New Task', 'false');
+const todos = new TodoList();
+
+describe('Add New Task', () => {
+  test('add a todo', () => {
+    // arrange
+    localStorage.clear();
+    // act
+    todos.addTask('New Task', false);
+    expect((localStorage).getItem('todo-list-tasks')).toBe(JSON.stringify([{ description: 'New Task', completed: false, index: 1 }]));
+  });
 });
