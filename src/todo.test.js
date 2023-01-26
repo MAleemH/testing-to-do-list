@@ -11,6 +11,9 @@ describe('Add New Task', () => {
     localStorage.clear();
     // act
     todos.addTask('New Task', false);
-    expect((localStorage).getItem('todo-list-tasks')).toBe(JSON.stringify([{ description: 'New Task', completed: false, index: 1 }]));
+    // assert
+    expect((localStorage).getItem('todo-list-tasks')).toBe(JSON.stringify([{
+      description: 'New Task', completed: false, index: 1, editing: false,
+    }]));
   });
 });
