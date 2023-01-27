@@ -26,14 +26,14 @@ const myForm = new Form(myList, {
   clearAllCompletedTasks: 'clear_all_completed_tasks',
 });
 
-describe('Testing To Do list: part 1', () => {
-  test('Add one new item to the list', () => {
+describe('Add/Remove Item', () => {
+  test('Add Item to List', () => {
     myList.addTask('Test description');
     const list = document.querySelectorAll('#test-list li');
     expect(list).toHaveLength(1);
   });
 
-  test('Remove one item to the list', () => {
+  test('Remove Item from list', () => {
     myList.removeTask(1);
     myList.drawTable();
 
