@@ -26,15 +26,11 @@
 
 # 📖 To Do List <a name="about-project"></a>
 
-> This project is related to daily to dos.
-
 **To Do List** is a HTML and JavaScript based project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> HTML, CSS, JavaScript and Webpack
 
 <details>
   <summary>Languages</summary>
@@ -99,7 +95,11 @@ Open your terminal of VS Code and write following commands to run this project o
 
 ### Run tests
 
-After the above step, program will start running. You can perform desired activities.
+Run tests with following command:
+
+```sh
+  npm test
+```
 
 ### Deployment
 
@@ -111,8 +111,6 @@ Use Github Pages for free and secure deployment.
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Muhammad Aleem Hashmi (Aleem) & Shakir Hussain
 
 👤 **Muhammad Aleem Hashmi**
 
@@ -130,8 +128,11 @@ Use Github Pages for free and secure deployment.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+We will add tests for followings:
 
-- [ ] ****
+- [ ] **A function for editing the task description**
+- [ ] **A function for updating an item's 'completed' status**
+- [ ] **The "Clear all completed" function**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
