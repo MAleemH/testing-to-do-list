@@ -112,7 +112,7 @@ Use Github Pages for free and secure deployment.
 
 ## 👥 Authors <a name="authors"></a>
 
-> Muhammad Aleem Hashmi (Aleem)
+> Muhammad Aleem Hashmi (Aleem) & Shakir Hussain
 
 👤 **Muhammad Aleem Hashmi**
 
@@ -120,6 +120,9 @@ Use Github Pages for free and secure deployment.
 - Twitter: [@MAleemHashmi1](https://twitter.com/MAleemHashmi1)
 - LinkedIn: [Muhammad Aleem Hashmi](https://www.linkedin.com/in/muhammad-aleem-hashmi-09658a171/)
 
+👤 **Shakir Hussain**
+
+- GitHub: [@Shakir-Hussain12](https://github.com/Shakir-Hussain12)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
