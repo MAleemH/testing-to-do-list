@@ -40,7 +40,12 @@ describe('Add/Remove Item', () => {
     expect(myList.tasks[myList.tasks.length - 1].completed).toBe(false);
   });
 
-  // Add Here
+  test('Edit Task', () => {
+    myList.editTask(myList.tasks[myList.tasks.length - 1]);
+    const updated = myList.tasks[myList.tasks.length - 1].description;
+    const check = myList.tasks[myList.tasks.length - 1].domSpan.innerHTML;
+    expect(check).toBe(updated);
+  });
 
   test('Remove Item from list', () => {
     myList.removeTask(1);
