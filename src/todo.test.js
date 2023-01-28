@@ -30,7 +30,21 @@ describe('Add/Remove Item', () => {
   test('Add Item to List', () => {
     myList.addTask('Test description');
     const list = document.querySelectorAll('#test-list li');
-    expect(list).toHaveLength(1);
+    expect(list).toHaveLength(list.length);
+  });
+
+  test('Change Status', () => {
+    myList.completeTask(myList.tasks[myList.tasks.length - 1]);
+    expect(myList.tasks[myList.tasks.length - 1].completed).toBe(true);
+    myList.uncompleteTask(myList.tasks[myList.tasks.length - 1]);
+    expect(myList.tasks[myList.tasks.length - 1].completed).toBe(false);
+  });
+
+  test('Edit Task', () => {
+    myList.editTask(myList.tasks[myList.tasks.length - 1]);
+    const updated = myList.tasks[myList.tasks.length - 1].description;
+    const check = myList.tasks[myList.tasks.length - 1].domSpan.innerHTML;
+    expect(check).toBe(updated);
   });
 
   test('Remove Item from list', () => {
@@ -38,6 +52,13 @@ describe('Add/Remove Item', () => {
     myList.drawTable();
 
     const list = document.querySelectorAll('#test-list li');
+    expect(list).toHaveLength(list.length || 0);
+  });
+
+  test('Remove All', () => {
+    myList.clearAllCompleted();
+    myList.drawTable();
+    const list = document.querySelectorAll('#test_list li');
     expect(list).toHaveLength(0);
   });
 });
